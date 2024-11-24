@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primaryColor:#75757575;
+    --secondaryColor:rgb(216, 214, 214);
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../Images/pexels-elti-meshau-107925-333850.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+
+form{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 93%, 0.048);
+    box-shadow: #111111 0px 0px 5px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    color: var(--primaryColor);
+}
+
+.formLabel{
+    display: block;
+    width: 90%;
+    border-bottom: .5px solid var(--primaryColor);
+    color: var(--primaryColor);
+}
+
+
+.formControl{
+    background-color: transparent;
+    border: none;
+    margin-block: 10px;
+    width: 90%;
+    padding: 10px;
+    
+}
+
+.formControl:focus {
+    outline: none;
+    border:none;
+    color:var(--secondaryColor);
+    
+}
+.formLabel:focus-within i ,.gender:focus-within label ,.sports:focus-within label  {
+    color: var(--secondaryColor);
+    
+}
+.formLabel:focus-within{
+    border-bottom: .5px solid var(--secondaryColor);
+}
+
+.gender{
+    display: flex;
+    margin-block: 15px;
+    width: 90%;
+    justify-content: start;
+}
+
+input[value="female"]{
+    margin-left: auto;
+    margin-right: 10px;
+    
+}
+input[value="male"]{
+    
+    margin-right: 10px;
+    
+}
+label[for="gender"]{
+    margin-right:20px ;
+}
+
+.sports{
+    display: flex ;
+    width: 90%;
+    margin-block: 10px;
+    justify-content: space-between;
+}
+
+select{
+    color: var(--primaryColor);
+    background-color: hsla(0, 0%, 93%, 0.048);
+    box-shadow: #111111 0px 0px 5px;
+}
+
+select:focus{
+    color: var(--secondaryColor);
+    background-color: hsla(0, 0%, 93%, 0.048) !important;
+    box-shadow: #111111 0px 0px 5px;
+}
+
+
+optgroup{
+    color: var(--primaryColor);
+    background-color: hsla(0, 0%, 93%, 0.048);
+    box-shadow: #111111 0px 0px 5px;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: transparent; 
+    box-shadow: #111111 0px 0px 5px;
+    color: var(--primaryColor);    
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    width: 150px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+} 
+
+.buttons{
+    display: flex;
+    
+    width: 90%;
+}
+
+#submit{
+    color: var(--secondaryColor);
+    height: 50px;
+    background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%);
+    margin-right: 20px;
+ }
+#reset{
+    
+    color: var(--primaryColor);
+    border-radius: 10px;
+    border:  3px solid;
+    border-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%)    1;
+ }
+ #reset:hover{
+    color: var(--secondaryColor);
+    background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%);
+ }
+
+
+#output{
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    top:82%;
+    width: 400px;
+    margin-block: 10px;
+    padding: 10px;
+    background-color: hsla(0, 0%, 93%, 0.048);
+    border: none;
+    box-shadow: #111111 0px 0px 5px;
+    color: #DC2424;
+    border-radius: 5px;
+}
+
+
+#output p{
+    
+    margin-right: 20px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    
+    <section>
+        <form >
+            <label class="formLabel" for="name">
+                <i class="fa-solid fa-user"></i>
+                <input required class="formControl" type="text" placeholder="user name" id="name">
+            </label>
+            <label class="formLabel"  for="email">
+                <i class="fa-solid fa-envelope"></i>
+                <input required class="formControl" type="email" placeholder="Email" id="email">
+            </label>
+            <label class="formLabel" for="password">
+                <i class="fa-solid fa-lock"></i>
+                <input required class="formControl" type="password" placeholder="Password" id="password">
+            </label>
+            <div class="gender">
+                <label  for="gender">
+                    Gender
+                </label>
+                <input required  type="radio" placeholder="Gender" name="gender" value="male">male
+                <input required  type="radio" placeholder="Gender" name="gender" value="female">female
+            </div>
+                
+            
+            <div class="sports">
+                <label for="">Sports</label>
+                <input   type="checkbox" id="football">
+                <label for="football">Football</label>
+                <input   type="checkbox" id="basketball">
+                <label for="basketball">basketball</label>
+                <input   type="checkbox" id="tennis">
+                <label for="tennis">tennis</label>
+                
+            </div>
+            
+                
+                <select id="country" class="formControl" required > 
+                    
+                    <option value="india">India</option>
+                    <option value="egypt">Egypt</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select >
+            
+                <div class="buttons">
+                    <button class="btn" id="submit" type="submit" >Submit</button>
+                    <button class="btn" id="reset" type="reset" >reset</button>
+                </div>
+
+        </form>
+
+        <div id="output">
+            <p id="nameOutput">please enter your name at least 3 characters</p>
+            <p id="emailOutput"> please enter valid email</p>
+            <p id="passwordOutput"> please enter valid password</p>
+            <p id="genderOutput">please select your gender</p>
+            <p id="sportOutput"> please select at least one sport</p>
+            <p id="countryOutput">  please select your country</p>
+        </div>
+
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>
